@@ -1,0 +1,203 @@
+body{
+    width: 100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    overflow: hidden;
+    font-size: 14px;
+    background-color:#97C1A9;
+    color:#97C1A9;
+}
+.navbar{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top: 0;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+@media screen and (max-width: 1000px) {
+    #signup_div{
+        /* visibility: hidden; */
+        display:none;
+
+    }
+    #login_div{
+        top: 0;
+        margin-top: 0;
+        padding-top: 0;
+
+    }
+    #navbar{
+        padding: 0;
+    }
+}
+
+#signup_div{
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+
+
+.login_btn{    
+    color: blue;
+}
+
+.logout_btn{
+    background-color: blue;
+}
+#prev_month_btn{
+    background-color: #dbdbdb;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+#next_month_btn{
+    background-color: #dbdbdb;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.container{
+    padding: 20px;
+}
+
+/* calendar table  */
+.min-w-0 {
+    min-width: 0;
+}
+
+#calendar_table{
+    display: table;
+    width: 100%;
+    text-align: center;
+    
+    /* grid-template-columns: repeat(7, 1fr);  */
+}
+
+#calendar_table td{
+    height: 100px; /*Yi: adjust height later */
+    width: 14%;
+    text-align: center;
+}
+#calendar_table .today_cell{
+    /* justify-content: center;
+    display: flex; */
+   
+    text-align: center;
+}
+#calendar_table .today_cell .date-div{
+    /* background-color: red; */
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(253, 103, 103);
+    display: inline-block;
+}
+#calendar_table .event-div{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 80px;
+}
+/* ul and li */ 
+/* Reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color */
+#calendar_table .event-div ul{
+    padding-left: 1.5em;
+    padding-top: 1mm;
+    padding-bottom: 1mm;
+    font-size: 14px;
+    /* list-style: none; */
+}
+#calendar_table .event-div li{
+    padding-left: -1mm;
+    padding-right: 1em;
+    text-align: left;
+    top:0;
+    padding-top: 0.3mm;
+    padding-bottom: 0.3mm;
+    margin: 0px;
+    line-height: 12px;
+   
+}
+/* .event-div ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight:bolder;
+    display: inline-block; 
+    width: 0.8em;
+    margin-left: -1em;
+  } */
+ 
+.event-div ul .default::marker{
+    color: #8FCACA;
+    font-size: 20px;
+}
+.event-div ul .event::marker{
+    color: #E67C73;
+    font-size: 20px;
+}
+.event-div ul .to_do::marker{
+    color: #97C1A9;
+    font-size: 20px;
+}
+.event-div ul .learning::marker{
+    color: #C2A1B9;
+    font-size: 20px;
+}
+.event-div ul .reward::marker{
+    color: #755E50;
+    font-size: 20px;
+}
+.event-div ul .workout::marker{
+    color: #C2A18D;
+    font-size: 20px;
+}
+
+
+
+
+.event-div ul li::marker {
+    color: red;
+    font-size: 20px;
+    
+} 
+#calendar_table .shadow_cell{
+    color: gray;
+    background-color: #dbdbdb;
+}
+
+
+#mydialog { display:none }
+
+/* Hide these two elements in the main calendar. 
+They should be visible only when you clicked the cell to create an event*/
+/* #event_title{
+    visibility: hidden;
+}
+
+#submit_event_btn{
+    visibility: hidden;
+} */
+#date{
+    width: 105px;
+}
+
+#start_at{
+    width: 60px;
+}
+#end_at{
+    width: 60px;
+}
+
+.modal_1::backdrop{
+    background:none; 
+    opacity: .1; 
+    
+    
+}
+.modal_1{
+    max-width: 500px;
+    border: 1px solid gray;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+
+}
