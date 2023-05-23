@@ -1,0 +1,30 @@
+components:
+    schemas:
+        BuyRequest:
+            title: BuyRequest
+            type: object
+            properties:
+                sellerId:
+                    title: BuyRequest.sellerId
+                    type: string
+                buyerId: 
+                    title: BuyRequest.buyerId
+                    type: string
+                bookId: 
+                    title: BuyRequest.bookId
+                    type: string
+                content: 
+                    title: BuyRequest.content
+                    type: string
+                dateCreated: 
+                    title: BuyRequest.dateCreated
+                    type: string
+                read: 
+                    title: BuyRequest.read
+                    type: boolean
+                approved: 
+                    title: BuyRequest.approved
+                    type: boolean
+                denied: 
+                    title: BuyRequest.denied
+                    type: boolean

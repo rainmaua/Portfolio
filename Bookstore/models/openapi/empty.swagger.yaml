@@ -1,0 +1,4 @@
+components:
+    schemas:
+        Empty:
+          type: object

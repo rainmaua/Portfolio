@@ -1,0 +1,21 @@
+components:
+    schemas:
+        Course:
+            title: Course
+            type: object
+            properties:
+                id:
+                    title: Course.id
+                    type: string
+                name:
+                    title: Course.name
+                    type: string
+                university:
+                    title: Course.university
+                    type: string
+                dateCreated:
+                    title: Course.dateCreated
+                    type: string
+                dateUpdated:
+                    title: Course.dateUpdated
+                    type: string
