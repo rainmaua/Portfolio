@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+        { "source": "/book/:id", "destination": "/book/:id" }
+        
+    ]
+}
