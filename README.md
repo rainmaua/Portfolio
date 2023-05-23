@@ -1,5 +1,5 @@
-# Portfolio (2022)
-This is Yi Ryoung Kim's 2022 portfolio
+# Portfolio (2022-2023)
+This is Yi Ryoung Kim's portfolio
 
 ## Book Recommendations Website 
 - #### MERN Stack Project (MongoDB, Express.js, React.js, Node.js)
@@ -18,4 +18,8 @@ This is Yi Ryoung Kim's 2022 portfolio
 - #### LAMP Stack Project (Linux, Apache HTTP Server, MySQL, PHP)
 - http://ec2-18-224-15-37.us-east-2.compute.amazonaws.com/~rainmaua/newsWebsite/news_website/main.php
 
+## Bookstore for Univeristy Students 
+- #### Next.js, TypeScript, Prisma, SQL
+- /planning/ArchitecturalDiagram.png
+- /planning/Breadboard.png
 
