@@ -20,6 +20,6 @@ This is Yi Ryoung Kim's portfolio
 
 ## Bookstore for Univeristy Students 
 - #### Next.js, TypeScript, Prisma, SQL
-- /planning/ArchitecturalDiagram.png
-- /planning/Breadboard.png
+- ![Breadbard](Bookstore/planning/Breadboard.png)
+- ![Architectural Diagram](Bookstore/planning/ArchitecturalDiagram.png)
 
