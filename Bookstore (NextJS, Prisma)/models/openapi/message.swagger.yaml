@@ -1,8 +1,0 @@
-components:
-    schemas:
-        Message:
-            type: object
-            properties:
-                message:
-                    title: Message.message
-                    type: string

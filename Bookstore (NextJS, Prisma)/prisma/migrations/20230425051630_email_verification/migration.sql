@@ -1,3 +1,0 @@
--- AlterTable
-ALTER TABLE "User" ADD COLUMN     "code" TEXT NOT NULL DEFAULT '000000',
-ADD COLUMN     "verified" BOOLEAN NOT NULL DEFAULT false;
