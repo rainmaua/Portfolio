@@ -1,0 +1,102 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Next Swagger API Example",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/hello": {
+      "get": {
+        "description": "Returns the hello world",
+        "responses": {
+          "200": {
+            "description": "hello world"
+          }
+        }
+      }
+    },
+    "/api/book/all": {
+      "get": {
+        "summary": "Returns all books",
+        "description": "Returns a list of all books",
+        "responses": {
+          "200": {
+            "description": "hello world"
+          }
+        }
+      }
+    },
+    "/api/book/by-course": {
+      "get": {
+        "summary": "Search books by course",
+        "description": "Returns a list of books matching the passed course ID",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "course",
+            "type": "string",
+            "description": "The course UUID for the book"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "hello world",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Book"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/user/all": {
+      "get": {
+        "summary": "Returns a list of all users",
+        "responses": {
+          "200": {
+            "description": "hello world"
+          }
+        }
+      }
+    },
+    "/api/user?id={id}": {
+      "get": {
+        "description": "Returns a list of all users",
+        "responses": {
+          "200": {
+            "description": "hello world"
+          }
+        }
+      }
+    },
+    "/api/user": {
+      "put": {
+        "description": "Returns a list of all users",
+        "responses": {
+          "200": {
+            "description": "hello world"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Book": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "isbn": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}
