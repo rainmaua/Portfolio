@@ -1,5 +1,4 @@
 # Portfolio (2022-2023)
-This is Yi Ryoung Kim's portfolio
 
 ## Book Recommendations Website 
 - #### MERN Stack Project (MongoDB, Express.js, React.js, Node.js)
